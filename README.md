@@ -25,20 +25,20 @@ One of the installation steps of MySQL requires to set its root password. By Def
 If you want to change it (This is recommendable), you need to update a global variable, named "password", which is hard 
 coded. You can find it at /FlipWeb/src/edu/iastate/ansci/flip/database/DatabaseFlip.java (unpack war file)
 
-Then, you need to download the following sql script: Flip_Database_2016_01_05_No_Examples.sql.
+Then, you need to download the following sql script: Flip_Database_2016_01_05_No_Examples.sql. A simply way to execute it is by opening a OS terminal and from there to execute this script.
 Example: %> mysql -u root -p < Flip_Database_2016_01_05_No_Examples.sql
 
-This script will create automatically all needed tables to manage the flip data.Flip is configured  with a default admin account whose details are: username: "admin" and password: "edare1". You should be able to change it from FLIP_WEB
+This script will create automatically all needed tables to manage the flip data. Flip is pre-configured  with a default admin account whose details are: username: "admin" and password: "edare1". You should be able to change this password easily after running FLIP.
 
-SOFTWARE INSTALLATION
+SOFTWARE INSTALLATION AND EXECUTION
 
-Assuming you have installed Apache Tomcat, MYSQL Server and you have run the provided the sql script to create the FLIP tables, you just need to download FlipWeb_"creation_date".war file.  Just, choose the latest version and rename it simply as FlipWeb.war.
-In order that, Tomcat7 can automatically recognize this war file, you need to move it to your tomcat7 webapps directory. You DO NOT need to unpack it (unless you want to see the source code). 
+Assuming you have installed Apache Tomcat, MYSQL Server and you have run the provided sql script to create the FLIP tables, you just need to download a FlipWeb_"creation_date".war file.  Just, choose the latest version and rename it simply as FlipWeb.war.
+In order that Tomcat7 can automatically recognize this war file, you need to move it to your tomcat7 webapps directory. You DO NOT need to unpack it there.( If you want to examine the source code, just unpack it in another directory). 
 
-To test whether or not FlipWeb is running, just run your favorite browser (either firefox or chrome are recommended) and open the url http://localhost:8080/FlipWeb
+To test whether or not FlipWeb is running, just run your favorite browser (either firefox or chrome are recommended) and open this url: http://localhost:8080/FlipWeb
 If this is working properly, you should able to see the FLIP's welcome page.
 
-In case you want to access FLIP's source code, you need to unpack the war file, since this file contains the java files, which are located in directory src/
+In case you may want to access any FLIP's source code, you need to unpack the war file, and locate the directory src/
 
 
 
