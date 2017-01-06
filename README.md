@@ -15,15 +15,15 @@ can become a web-based software as today is available.
 
 SOFTWARE REQUIREMENTS
 
-FLIP has been tested with the following software:
+FLIP is still being tested but it has been proved successfully with the following auxiliary software:
 
 -JRE 1.5 or higher
--Apache Tomcat 6.0 and 7.0 (FLIP does not work with Tomcat 8)
+-Apache Tomcat 6.0 or 7.0 (FLIP does not work with Tomcat 8)
 -MySQL Server 5.5 or Higher
 
 One of the installation steps of MySQL requires to set its root password. By Default, FLIP assumes this password is set as "FlipWeb".
 If you want to change it (This is recommendable), you need to update a global variable, named "password", which is hard 
-coded. You can find it at /FlipWeb/src/edu/iastate/ansci/flip/database/DatabaseFlip.java
+coded. You can find it at /FlipWeb/src/edu/iastate/ansci/flip/database/DatabaseFlip.java (unpack war file)
 
 Then, you need to download the following sql script: Flip_Database_2016_01_05_No_Examples.sql.
 Example: %> mysql -u root -p < Flip_Database_2016_01_05_No_Examples.sql
@@ -32,11 +32,13 @@ This script will create automatically all needed tables to manage the flip data.
 
 SOFTWARE INSTALLATION
 
-Assuming you have installed Apache Tomcat, MYSQL Server and you have run the provided the sql script to create the FLIP tables, you just need to download FlipWeb_<creation_date>.war file.Choose the latest version and rename it simply as FlipWeb.war. In order that, Tomcat7 can recognize this war file, you need to move it to the webapps directory of your tomcat7 installation.
+Assuming you have installed Apache Tomcat, MYSQL Server and you have run the provided the sql script to create the FLIP tables, you just need to download FlipWeb_"creation_date".war file.  Just, choose the latest version and rename it simply as FlipWeb.war.
+In order that, Tomcat7 can automatically recognize this war file, you need to move it to your tomcat7 webapps directory. You DO NOT need to unpack it (unless you want to see the source code). 
 
-To test, if FlipWeb is running, from your browser (recommended firefox or chrome) open the url http://localhost:8080/FlipWeb
-If this is working, you should able to see the FLIP's welcome page.
+To test whether or not FlipWeb is running, just run your favorite browser (either firefox or chrome are recommended) and open the url http://localhost:8080/FlipWeb
+If this is working properly, you should able to see the FLIP's welcome page.
 
+In case you want to access FLIP's source code, you need to unpack the war file, since this file contains the java files, which are located in directory src/
 
 
 
