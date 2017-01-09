@@ -13,6 +13,12 @@ Initially FLIP was developed by Robert Benson as a standalone application to be 
 Desktop computer supporting JDK 1.2 or Higher. Later on, FLIP was modified in order that it 
 can become a web-based software as today is available. 
 
+<h2>FLIP WEB</h2>
+
+This web application  allows multiple users sharing animales based on the same genetic definition to interact with each other to simulate  the growing and performance of simulated animals.
+
+
+
 SOFTWARE REQUIREMENTS
 
 FLIP is still being tested but it has been proved successfully with the following auxiliary software:
