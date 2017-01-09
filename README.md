@@ -17,7 +17,7 @@ SOFTWARE REQUIREMENTS
 
 FLIP is still being tested but it has been proved successfully with the following auxiliary software:
 
--JRE 1.5 or higher
--Apache Tomcat 6.0 or 7.0 (FLIP does not work with Tomcat 8)
--MySQL Server 5.5 or Higher
+1) JRE 1.5 or higher
+2) Apache Tomcat 6.0 or 7.0 (FLIP does not work with Tomcat 8)
+3) MySQL Server 5.5 or Higher
 
