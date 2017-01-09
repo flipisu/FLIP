@@ -1,4 +1,3 @@
-# FLIP_WEB
 FLIP can simulate inheritance for diploid organisms with a variable
 number of genes, chromosomes and traits. Traits are simulated by combining
 genetic effects and random environmental effects. Genetic effects are simulated
